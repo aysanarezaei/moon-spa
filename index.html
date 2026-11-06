@@ -1,72 +1,148 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <title>MOON SPA | Luxury Wellness Istanbul</title>
+html {
+    scroll-behavior: smooth;
+}
 
-    <link rel="stylesheet" href="style.css">
-</head>
+body {
+    background-color: #100B0D;
+    color: #F5F1F2;
+    font-family: Arial, sans-serif;
+}
 
-<body>
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 8%;
+    border-bottom: 1px solid #38252C;
+}
 
-    <header>
-        <nav class="navbar">
-            <a href="#" class="logo">MOON SPA</a>
+.logo {
+    color: #BFC0C5;
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-decoration: none;
+}
 
-            <div class="nav-links">
-                <a href="#home">Startseite</a>
-                <a href="#services">Behandlungen</a>
-                <a href="#about">Über uns</a>
-                <a href="#booking" class="nav-button">Jetzt buchen</a>
-            </div>
-        </nav>
-    </header>
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
 
-    <main>
+.nav-links a {
+    color: #E5DDE0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
 
-        <section id="home" class="hero">
-            <p class="subtitle">LUXURY WELLNESS EXPERIENCE</p>
+.nav-links a:hover {
+    color: #B52D50;
+}
 
-            <h1>Discover Your Moment<br>
-                of <span>Relaxation</span>
-            </h1>
+.nav-links .nav-button {
+    border: 1px solid #A52D4E;
+    padding: 12px 22px;
+    color: #FFFFFF;
+}
 
-            <p class="description">
-                Entfliehen Sie dem Alltag und genießen Sie
-                exklusive Spa- und Massageerlebnisse
-                im Herzen von Istanbul.
-            </p>
+.hero {
+    min-height: 600px;
+    padding: 150px 10%;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #100B0D,
+        #32101D,
+        #100B0D
+    );
+}
 
-            <a href="#booking" class="button">
-                Termin buchen
-            </a>
-        </section>
+.subtitle {
+    color: #BFC0C5;
+    letter-spacing: 5px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
 
-        <section id="services">
-            <h2>Unsere Behandlungen</h2>
-            <p>Entdecken Sie unsere exklusiven Spa-Erlebnisse.</p>
-        </section>
+.hero h1 {
+    font-size: 58px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
 
-        <section id="about">
-            <h2>Über MOON SPA</h2>
-            <p>
-                Ein Ort der Ruhe, Entspannung und Erholung
-                in Istanbul, Türkiye.
-            </p>
-        </section>
+.hero h1 span {
+    color: #A52D4E;
+}
 
-        <section id="booking">
-            <h2>Online-Buchung</h2>
-            <p>Ihr persönliches Spa-Erlebnis beginnt hier.</p>
-        </section>
+.description {
+    color: #C9BEC2;
+    max-width: 550px;
+    margin: 0 auto 35px;
+    line-height: 1.9;
+}
 
-    </main>
+.button {
+    display: inline-block;
+    background: #7E1938;
+    color: white;
+    padding: 15px 35px;
+    text-decoration: none;
+    transition: 0.3s;
+}
 
-    <footer>
-        <p>© 2026 MOON SPA | Istanbul, Türkiye</p>
-    </footer>
+.button:hover {
+    background: #A52D4E;
+}
 
-</body>
-</html>
+section:not(.hero) {
+    padding: 100px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #BFC0C5;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+section p {
+    color: #C9BEC2;
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    border-top: 1px solid #38252C;
+    color: #AFA5A9;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        padding: 110px 6%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+}
