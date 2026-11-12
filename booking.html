@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOON SPA | Online Booking</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .booking-container {
+            max-width: 650px;
+            margin: 70px auto;
+            padding: 40px;
+            background: #1C1217;
+            border: 1px solid #59303E;
+        }
+
+        .booking-container h1 {
+            text-align: center;
+            color: #BFC0C5;
+            margin-bottom: 15px;
+        }
+
+        .booking-container p {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .booking-form label {
+            display: block;
+            margin: 18px 0 8px;
+            color: #D8C6CD;
+        }
+
+        .booking-form input,
+        .booking-form select {
+            width: 100%;
+            padding: 14px;
+            background: #100B0D;
+            border: 1px solid #65404D;
+            color: white;
+            font-size: 15px;
+        }
+
+        .booking-form button {
+            width: 100%;
+            margin-top: 30px;
+            padding: 16px;
+            background: #7E1938;
+            border: none;
+            color: white;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .booking-form button:hover {
+            background: #A52D4E;
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 25px;
+            color: #BFC0C5;
+            text-decoration: none;
+        }
+
+        @media(max-width: 700px) {
+            .booking-container {
+                margin: 30px 15px;
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">MOON SPA</a>
+        <nav class="nav-links">
+            <a href="index.html">Startseite</a>
+            <a href="index.html#services">Behandlungen</a>
+        </nav>
+    </header>
+
+    <main class="booking-container">
+        <h1>Ihre Auszeit beginnt hier</h1>
+        <p>Reservieren Sie Ihr persönliches Spa-Erlebnis.</p>
+
+        <form class="booking-form" onsubmit="event.preventDefault(); alert('Vielen Dank! Ihre Anfrage wurde vorbereitet. Dies ist eine Demo.');">
+
+            <label for="name">Vollständiger Name</label>
+            <input type="text" id="name" placeholder="Ihr Name" required>
+
+            <label for="email">E-Mail-Adresse</label>
+            <input type="email" id="email" placeholder="Ihre E-Mail" required>
+
+            <label for="treatment">Behandlung</label>
+            <select id="treatment" required>
+                <option value="">Bitte auswählen</option>
+                <option>Relaxing Massage</option>
+                <option>Deep Tissue Massage</option>
+                <option>Hot Stone Massage</option>
+            </select>
+
+            <label for="date">Wunschdatum</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Wunschzeit</label>
+            <select id="time" required>
+                <option value="">Bitte auswählen</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>12:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+                <option>17:00</option>
+            </select>
+
+            <button type="submit">Reservierungsanfrage senden</button>
+        </form>
+
+        <a href="index.html" class="back-link">← Zurück zur Startseite</a>
+    </main>
+
+    <footer>
+        © 2026 MOON SPA | Istanbul, Türkiye
+    </footer>
+
+</body>
+</html>
