@@ -95,14 +95,18 @@
             <label for="email">E-Mail-Adresse</label>
             <input type="email" id="email" placeholder="Ihre E-Mail" required>
 
-            <label for="treatment">Behandlung</label>
-            <select id="treatment" required>
-                <option value="">Bitte auswählen</option>
-                <option>Relaxing Massage</option>
-                <option>Deep Tissue Massage</option>
-                <option>Hot Stone Massage</option>
-            </select>
-
+           <label for="treatment">Wählen Sie Ihr Spa-Paket</label>
+<select id="treatment" name="treatment" required>
+    <option value="">Bitte auswählen</option>
+    <option value="classic">Classic Package – 100 €</option>
+    <option value="anti-aging">Anti Aging Package – 115 €</option>
+    <option value="moon-ritual">MOON Ritual Package – 120 €</option>
+    <option value="silver">Silver Package – 130 €</option>
+    <option value="ottoman">Ottoman Package – 140 €</option>
+    <option value="coffee-relax">Coffee Relax Package – 150 €</option>
+    <option value="sultans">Sultan's Package – 160 €</option>
+    <option value="luxury">Luxury Package – 185 €</option>
+</select>
             <label for="date">Wunschdatum</label>
             <input type="date" id="date" required>
 
