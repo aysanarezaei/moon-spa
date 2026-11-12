@@ -1,148 +1,49 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOON SPA | Luxury Wellness Istanbul</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
 
-html {
-    scroll-behavior: smooth;
-}
+    <header class="navbar">
+        <a href="#" class="logo">MOON SPA</a>
+        <nav class="nav-links">
+            <a href="#home">Startseite</a>
+            <a href="#about">Über uns</a>
+            <a href="#services">Behandlungen</a>
+            <a href="#contact" class="nav-button">Termin buchen</a>
+        </nav>
+    </header>
 
-body {
-    background-color: #100B0D;
-    color: #F5F1F2;
-    font-family: Arial, sans-serif;
-}
+    <section class="hero" id="home">
+        <p class="subtitle">LUXURY WELLNESS IN ISTANBUL</p>
+        <h1>Entspannung auf<br><span>höchstem Niveau.</span></h1>
+        <p class="description">
+            Entdecken Sie exklusive Massage- und Spa-Erlebnisse
+            im Herzen von Istanbul.
+        </p>
+        <a href="#contact" class="button">Jetzt entdecken</a>
+    </section>
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 28px 8%;
-    border-bottom: 1px solid #38252C;
-}
+    <section id="about">
+        <h2>Über MOON SPA</h2>
+        <p>Ein Ort der Ruhe, Entspannung und exklusiven Wellness.</p>
+    </section>
 
-.logo {
-    color: #BFC0C5;
-    font-size: 26px;
-    font-weight: bold;
-    letter-spacing: 5px;
-    text-decoration: none;
-}
+    <section id="services">
+        <h2>Unsere Behandlungen</h2>
+        <p>Relaxing Massage · Deep Tissue Massage · Hot Stone Massage</p>
+    </section>
 
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
+    <section id="contact">
+        <h2>Kontakt</h2>
+        <p>Erleben Sie pure Entspannung in Istanbul.</p>
+    </section>
 
-.nav-links a {
-    color: #E5DDE0;
-    text-decoration: none;
-    font-size: 14px;
-    transition: 0.3s;
-}
+    <footer>© 2026 MOON SPA | Istanbul, Türkiye</footer>
 
-.nav-links a:hover {
-    color: #B52D50;
-}
-
-.nav-links .nav-button {
-    border: 1px solid #A52D4E;
-    padding: 12px 22px;
-    color: #FFFFFF;
-}
-
-.hero {
-    min-height: 600px;
-    padding: 150px 10%;
-    text-align: center;
-    background: linear-gradient(
-        135deg,
-        #100B0D,
-        #32101D,
-        #100B0D
-    );
-}
-
-.subtitle {
-    color: #BFC0C5;
-    letter-spacing: 5px;
-    font-size: 12px;
-    margin-bottom: 25px;
-}
-
-.hero h1 {
-    font-size: 58px;
-    line-height: 1.2;
-    margin-bottom: 25px;
-}
-
-.hero h1 span {
-    color: #A52D4E;
-}
-
-.description {
-    color: #C9BEC2;
-    max-width: 550px;
-    margin: 0 auto 35px;
-    line-height: 1.9;
-}
-
-.button {
-    display: inline-block;
-    background: #7E1938;
-    color: white;
-    padding: 15px 35px;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-.button:hover {
-    background: #A52D4E;
-}
-
-section:not(.hero) {
-    padding: 100px 10%;
-    text-align: center;
-}
-
-section h2 {
-    color: #BFC0C5;
-    font-size: 32px;
-    margin-bottom: 25px;
-}
-
-section p {
-    color: #C9BEC2;
-    line-height: 1.8;
-}
-
-footer {
-    text-align: center;
-    padding: 30px;
-    border-top: 1px solid #38252C;
-    color: #AFA5A9;
-    font-size: 13px;
-}
-
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-    }
-
-    .hero {
-        padding: 110px 6%;
-    }
-
-    .hero h1 {
-        font-size: 38px;
-    }
-}
+</body>
+</html>
